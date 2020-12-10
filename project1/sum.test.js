@@ -1,5 +1,14 @@
 const sum = require('./sum');
 
+beforeAll(() => {
+    return "initializeCityDatabase()";
+  });
+  
+  afterAll(() => {
+    return "clearCityDatabase()";
+  });
+
+
 test('adds 2 + 2 to equal 4', () => {
   expect(sum(2, 2)).toBe(4);
 });
@@ -68,3 +77,4 @@ test('to check list contain milk or not ', () => {
     expect(arrayList).toContain('milk');
     expect(new Set(arrayList)).toContain('milk');
 });
+
