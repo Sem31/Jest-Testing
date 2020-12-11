@@ -107,3 +107,17 @@ test("mock promise resolution", () => {
     expect(mock("foo")).resolves.toBe("bar");
     expect(mock).toHaveBeenCalledWith("foo");
 });
+
+//mock with function dependency
+
+const doAdd = (a, b, callback) => {
+    callback(a + b);
+  };
+  
+test("functions call with add to no.", () => {
+    const mockCallback = jest.fn();
+    console.log(mockCallback)
+    doAdd(1, 2, mockCallback);
+    console.log(mockCallback)
+    expect(mockCallback).toHaveBeenCalledWith(3);
+});
