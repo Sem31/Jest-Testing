@@ -7,9 +7,15 @@ const functions = {
         user['lastname'] = 'prajapat'
         return user
     },
-    fetchUser : () => axios.get("https://swapi.dev/api/people/1/")
-    .then(res => res.data)
-    .catch(err => 'error')
+    fetchUser : () => axios.get("https://swapi.dev/api/people/1/").then(res => res.data).catch(err => 'error'),
+    postUser : () => axios.post("https://reqres.in/api/users", {
+                            "name": "sdf",
+                            "job": "fasf"
+                        }),
+    putUser : () => axios.put("https://reqres.in/api/users/2", {
+                            "name": "sdf",
+                            "job": "fasf"
+                            })
 };
 
 module.exports = functions
