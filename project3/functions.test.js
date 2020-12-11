@@ -45,3 +45,65 @@ test('user fetch name data from starwar api', async () => {
     expect(data.name).toEqual('Luke Skywalker')
 
 })
+
+//mock test case
+test("implement mock test", () => {
+    const mock = jest.fn();
+  
+    let result = mock("foo");
+    
+    console.log(result)
+    console.log(mock)
+    expect(result).toBeUndefined();
+    expect(mock).toHaveBeenCalled();
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("foo");
+  });
+
+
+  test("mock implementation", () => {
+      //use arrow function insteat of using function
+    const mock = jest.fn(() => "bar");
+    
+    console.log(mock("fooo"))
+    expect(mock("foo")).toBe("bar");
+    // expect(mock).toBe("bar");
+    // console.log(mock)
+    expect(mock).toHaveBeenCalledWith("foo");
+  });
+  
+test("also mock implementation", () => {
+    //use of mockImplementation to implement mock
+    const mock = jest.fn().mockImplementation(() => "bar");
+  
+    expect(mock("foo")).toBe("bar");
+    expect(mock).toHaveBeenCalledWith("foo");
+});
+  
+test("mock implementation one time", () => {
+    // use mockImplementationOnce to use mock function at once only
+    const mock = jest.fn().mockImplementationOnce(() => "bar");
+  
+    expect(mock("foo")).toBe("bar");
+    expect(mock).toHaveBeenCalledWith("foo");
+  
+    expect(mock("baz")).toBe(undefined);
+    expect(mock).toHaveBeenCalledWith("baz");
+});
+  
+test("mock return value", () => {
+    const mock = jest.fn();
+    // mock return value
+    mock.mockReturnValue("bar");
+    console.log(mock("foo"))
+    expect(mock("foo")).toBe("bar");
+    expect(mock).toHaveBeenCalledWith("foo");
+});
+  
+test("mock promise resolution", () => {
+    const mock = jest.fn();
+    mock.mockResolvedValue("bar");
+  
+    expect(mock("foo")).resolves.toBe("bar");
+    expect(mock).toHaveBeenCalledWith("foo");
+});
