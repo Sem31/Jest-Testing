@@ -16,24 +16,26 @@ const dt = require('./jest.config')
 
 // beforeAll(() => initializeAll())
 // afterAll(() => closeAll())
+describe('(ProdTest): Test in production environment', () => {
+  // your test
 
-test('test 2 + 3 = 5', () => {
-    expect(func.add(2,3)).toBe(5)
+    test('test 2 + 3 = 5', () => {
+        expect(func.add(2,3)).toBe(5)
+    })
+    test('test 2 + 2 = 5 not', () => {
+        expect(func.add(2,2)).not.toBe(5)
+    })
+
+    //toEqual
+    test('use toEqual for object toBe is only for numbers or strings', () => {
+
+        expect(func.createUser()).toEqual({firstname:'sem', lastname : 'prajapat'})
+    })
 })
-test('test 2 + 2 = 5 not', () => {
-    expect(func.add(2,2)).not.toBe(5)
-})
-
-//toEqual
-test('use toEqual for object toBe is only for numbers or strings', () => {
-
-    expect(func.createUser()).toEqual({firstname:'sem', lastname : 'prajapat'})
-})
-
 //working with async data
 
 //promise
-test('user fetch name data from starwar api', () => {
+test('user fetch name data from starwar apis', () => {
     expect.assertions(1)
     return func.fetchUser()
             .then(data => {
@@ -147,7 +149,7 @@ test('user put name data in api', async () => {
 
 })
 
-describe("my asynchronous tests", () => {
+describe("(DevTest): my asynchronous tests", () => {
     beforeEach(async () => {
       console.log('> setup test')
       // SOMETHING ASYNCHRONOUS

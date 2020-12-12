@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "report":"jest --reporters default jest-stare",
-    "testwatch": "jest --watchAll"
+    "testwatch": "jest --watchAll",
+    "test:prod": "jest --testNamePattern=ProdTest",
+    "test:dev": "jest --testNamePattern=DevTest",
+    "single":"jest -t 'user fetch name data from starwar apis'"
   },
   "keywords": [],
   "author": "",
