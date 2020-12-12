@@ -1,6 +1,7 @@
 const { TestScheduler } = require('jest')
 const func = require('./functions')
-const axios = require('axios');
+const axios = require('axios')
+const dt = require('./jest.config')
 
 // const initializeAll = () => console.log("Initialize All test")
 // const closeAll = () => console.log("Close All test")
@@ -139,6 +140,7 @@ test('user put name data in api', async () => {
     const data = await func.putUser()
     console.log(data)
     console.log(data.status)
+    console.log(dt.data.name)
     expect(data.status).toEqual(200)
     expect(data.data.name).toEqual('sdf')
 
