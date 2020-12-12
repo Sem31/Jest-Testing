@@ -1,7 +1,0 @@
-{
-    "verbose": true,
-    "collectCoverage": true,
-    "data" : {
-        "name" : "sem"
-    }
-}

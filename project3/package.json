@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "testwatch": "jest --watchAll",
-    "testconfig":"jest --config=jestconfig.json"
+    "report":"jest --reporters default jest-stare",
+    "testwatch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "jest-html-reporter": "^3.3.0"
+    "jest-html-reporter": "^3.3.0",
+    "jest-stare": "^2.2.0"
   }
 }

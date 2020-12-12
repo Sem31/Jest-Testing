@@ -1,0 +1,303 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 2,
+  "numPassedTests": 19,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 19,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1607752683113,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1607752685465,
+        "runtime": 742,
+        "slow": false,
+        "start": 1607752684723
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/aaa/Desktop/jest/project3/reverseString.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "check resverse string exits or not",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "check resverse string exits or not"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "string resverses",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "string resverses"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "string resverses with upper case",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "string resverses with upper case"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 16,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1607752689853,
+        "runtime": 5098,
+        "slow": true,
+        "start": 1607752684755
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/aaa/Desktop/jest/project3/functions.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "test 2 + 3 = 5",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "test 2 + 3 = 5"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "test 2 + 2 = 5 not",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "test 2 + 2 = 5 not"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "use toEqual for object toBe is only for numbers or strings",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "use toEqual for object toBe is only for numbers or strings"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1463,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "user fetch name data from starwar api",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "user fetch name data from starwar api"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 613,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "user fetch name data from starwar api",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "user fetch name data from starwar api"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "implement mock test",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "implement mock test"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "mock implementation",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "mock implementation"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "also mock implementation",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "also mock implementation"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "mock implementation one time",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "mock implementation one time"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "mock return value",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "mock return value"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "mock promise resolution",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "mock promise resolution"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "functions call with add to no.",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "functions call with add to no."
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 980,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "user post name data in api",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "user post name data in api"
+        },
+        {
+          "ancestorTitles": [],
+          "duration": 1084,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "user put name data in api",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "user put name data in api"
+        },
+        {
+          "ancestorTitles": [
+            "my asynchronous tests"
+          ],
+          "duration": 6,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "my asynchronous tests test 1",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "test 1"
+        },
+        {
+          "ancestorTitles": [
+            "my asynchronous tests"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "my asynchronous tests test 2",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "test 2"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

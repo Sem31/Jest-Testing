@@ -147,8 +147,31 @@ test('user put name data in api', async () => {
 
 })
 
-//mock api
+describe("my asynchronous tests", () => {
+    beforeEach(async () => {
+      console.log('> setup test')
+      // SOMETHING ASYNCHRONOUS
+    });
+    afterEach(async () => {
+      console.log('< teardown test')
+      // SOMETHING ASYNCHRONOUS
+    });
+  
+    test("test 1", async () => {
+      console.log('-- starting test 1');
+      // SOMETHING ASYNCHRONOUS
+      console.log('-- finished test 1');
+    }, 100000);
+  
+    test("test 2", async () => {
+      console.log('-- starting test 2');
+      // SOMETHING ASYNCHRONOUS
+      console.log('-- finished test 2');
+    }, 100000);
+  });
 
+
+//mock api
 
 // const getFirstAlbumTitle = require('./index');
 
