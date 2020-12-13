@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "report": "jest --reporters default jest-stare"
+    "report": "jest --reporters default jest-stare",
+    "testwatch": "jest --watchAll",
+    "test:api": "jest --testNamePattern=ApiTest",
+    "test:mock": "jest --testNamePattern=MockTest",
+    "single": "jest -t 'user fetch name data from starwar apis'"
   },
   "keywords": [],
   "author": "",

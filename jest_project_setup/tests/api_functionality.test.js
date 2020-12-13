@@ -1,8 +1,6 @@
-// const { TestScheduler } = require('jest');
-// const { credentials } = require('../jest.config');
 const func = require('../src/api_functionality')
 
-describe("API testcases", () => {
+describe("(ApiTest): API testcases", () => {
     // test stuff
     test('user post name data in api', async () => {
         expect.assertions(1)

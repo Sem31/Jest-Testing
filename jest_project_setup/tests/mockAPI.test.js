@@ -1,10 +1,8 @@
-// const { TestScheduler } = require('jest');
-// const { credentials } = require('../jest.config');
 const func = require('../src/api_functionality')
 const axios = require('axios')
 jest.mock('axios');
 
-describe("API testcases", () => {
+describe("(MockTest): API testcases", () => {
     // test stuff
 
     test('user get name data in api', async () => {
@@ -39,20 +37,30 @@ describe("API testcases", () => {
           });
         
         const title = await func.postUser();
-        console.log(title)
         expect(title.data[0].title).toEqual('My First Album one');
     })
 
-    // test('user put name data in api', async () => {
-    //     expect.assertions(2)
-    //     const data = await func.putUser()
-    //     expect(data.status).toEqual(200)
-    //     expect(data.data.name).toEqual('kamlesh')
-    // })
+    test('user put name data in api', async () => {
+        // expect.assertions(2)
+        axios.put.mockResolvedValue({
+            data: [
+              {
+                userId: 12,
+                id: 12,
+                title: 'My First Album two'
+              },
+            ]
+          });
+          const title = await func.putUser();
+          expect(title.data[0].title).toEqual('My First Album two');
+    })
 
-    // test('user delete name data in api', async () => {
-    //     expect.assertions(1)
-    //     const data = await func.deleteUser()
-    //     expect(data.status).toEqual(204)
-    // })
+    test('user delete name data in api', async () => {
+        axios.delete.mockResolvedValue({
+            status : 404
+          });
+          const title = await func.deleteUser();
+          console.log(title)
+          expect(title.status).toEqual(404);
+    })
   });
