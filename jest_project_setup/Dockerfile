@@ -11,4 +11,4 @@ RUN npm install --silent
 
 EXPOSE 4200
 
-CMD ["/bin/sh", "-c", "npm run single"]
+CMD ["/bin/sh", "-c", "npm run test"]
