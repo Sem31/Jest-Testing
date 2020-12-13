@@ -10,7 +10,7 @@
     npm i jest-stare
 ```
 
-# Configuration instructions : 
+# Configuration File : 
 ```JavaScript 
     Configuration file is "jest.config.js" file
 ```
