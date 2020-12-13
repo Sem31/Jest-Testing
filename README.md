@@ -1,15 +1,22 @@
-Project Setup : 
+# Project Setup : 
+```JavaScript
     jest_project_setup
+```
 
-Installation instructions :
+# Installation instructions :
+```JavaScript
     npm i jest --save-dev
     npm i axios
     npm i jest-stare
+```
 
-Configuration instructions :  
+# Configuration instructions : 
+```JavaScript 
     Configuration file is "jest.config.js" file
+```
 
-Setup Package.json File :
+# Setup Package.json File :
+```JavaScript
     "scripts": {
         "test": "jest",     #run all testcase
         "report": "jest --reporters default jest-stare",    #run all testcase with report file
@@ -17,10 +24,13 @@ Setup Package.json File :
         "test:api": "jest --testNamePattern=ApiTest",   #run testcase with particular block
         "test:mock": "jest --testNamePattern=MockTest",
         "single": "jest -t 'user fetch name data from starwar apis'"    #run singel testcases
-    },
+    }
+```
 
-Docker Run Command :
+# Docker Run Command :
+```JavaScript
     # docker setup image 
     docker build -t JestProject:latest .
     #docker run image
     docker run JestProject:latest
+```
