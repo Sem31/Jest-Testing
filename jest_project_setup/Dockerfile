@@ -1,9 +1,9 @@
 FROM node:alpine3.11 as dev
 
-WORKDIR /app/frontend
+WORKDIR /app/Jest
 
 # To use packages in CLI without global install
-ENV PATH /app/frontend/node_modules/.bin:$PATH
+ENV PATH /app/Jest/node_modules/.bin:$PATH
 
 COPY . .
 
