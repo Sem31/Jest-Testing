@@ -1,0 +1,47 @@
+{
+    "port": 3000,
+      "protocol": "https",
+      "name": "Tutorial",
+      "stubs": [
+          {
+          "predicates" :[{
+              "equals":{
+                  "method": "GET",
+                  "path": "/tutorial"
+              }
+          }],
+          "responses" : [{
+              "is": {
+                  "statusCode": 200,
+                  "headers": {
+                      "Content-Type": "application/json"
+                  },
+                  "body": {"message":"success"}
+              }
+          }]
+          }]
+  }
+
+//   curl -i -X POST -H 'Content-Type: application/json' http://localhost:2525/imposters --data '{
+//     "port": 3000,
+//       "protocol": "https",
+//       "name": "Tutorial",
+//       "stubs": [
+//           {
+//           "predicates" :[{
+//               "equals":{
+//                   "method": "GET",
+//                   "path": "/tutorial"
+//               }
+//           }],
+//           "responses" : [{
+//               "is": {
+//                   "statusCode": 200,
+//                   "headers": {
+//                       "Content-Type": "application/json"
+//                   },
+//                   "body": {"message":"success"}
+//               }
+//           }]
+//           }]
+//   }'

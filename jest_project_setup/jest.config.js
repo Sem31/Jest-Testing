@@ -11,6 +11,7 @@ module.exports = {
     setupFilesAfterEnv: [
         "./src/setup.js",
     ],
+    testEnvironment: "node",
     reporters: [
         "default",
         [
