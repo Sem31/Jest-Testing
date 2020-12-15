@@ -32,6 +32,15 @@
     }
 ```
 
+# MounteBank installation
+``` JavaScript
+    npm i mountebank-helper
+```
+## Link to Follow mountebank
+``` JavaScript
+    https://www.npmjs.com/package/mountebank-helper
+```
+
 # Docker Run Command :
 ```JavaScript
     // docker setup image 
